@@ -1,0 +1,506 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  background: #f2f6fc;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #023e8a;
+}
+
+.nav-links a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #606f8b;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #0077b6;
+}
+
+.username {
+  background: #0077b6;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background: #f0fbff;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.hero-left h1 {
+  font-size: 2.8rem;
+  color: #03045e;
+  line-height: 1.2;
+}
+
+.hero-left span {
+  color: #0077b6;
+}
+
+.hero-left p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.hero-left button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-right img {
+  max-width: 90%;
+  height: auto;
+}
+/* Section container */
+.service-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #0077b6;
+  color: #ffffff;
+}
+
+/* Row with title + boxes in one line */
+.overview-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Title on same row but larger */
+.overview-title {
+  font-size: 2rem;
+  font-weight: 800;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+/* Boxes */
+.overview-box {
+ 
+  padding: 20px 25px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  flex: 0 0 auto; /* don't stretch */
+  transition: transform 0.3s ease;
+}
+
+.overview-box:hover {
+  transform: scale(1.05);
+}
+
+
+/* Booking Section */
+.booking-section {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  border: 2px solid #ccc; /* border added */
+  border-radius: 8px;
+  height: 600px;
+
+}
+
+.booking-left, .booking-right {
+  flex: 1;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.service-actions button {
+ cursor: pointer;
+  padding: 10px 20px;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  border-radius: 8px;
+   cursor: pointer;
+  padding: 10px 20px;
+}
+
+.add-btn {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+   cursor: pointer;
+  padding: 10px 20px;
+  
+}
+
+/* FIXED HEIGHT CART WITH SCROLL */
+.cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 300px; /* fixed height */
+  overflow-y: auto; /* scroll when content exceeds height */
+  border-radius: 8px;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart table th, .cart table td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.booking-right .cart{
+  height: 200px;
+  overflow-y: auto;
+}
+/* Booking form styling */
+.booking-form {
+  margin-top: 20px;
+}
+
+.booking-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.booking-form button ,.booking-right button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Features / Why Choose Us */
+.quality-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quality-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.quality-card {
+  flex: 1 1 220px;
+  max-width: 250px;
+  padding: 20px;
+}
+
+.quality-icon {
+  font-size: 50px;
+  color: #090909;
+  margin-bottom: 20px;
+}
+
+.quality-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.quality-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+
+/* Newsletter */
+.newsletter {
+  background: #0077b6;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.newsletter-form {
+  margin-top: 25px;
+}
+
+.newsletter-form input {
+  padding: 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  width: 220px;
+  max-width: 90%;
+}
+
+.newsletter-form button {
+  padding: 14px 30px;
+  background: #023e8a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background: #03045e;
+}
+
+/* Footer */
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  color: #0e0d0d;
+  padding: 60px 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 20px;
+  color: #090909;
+}
+
+.footer-section a {
+  display: block;
+  color: #040404;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #484646;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: black;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;      
+  height: 48px;     
+  margin: 0 8px;
+ 
+       
+  color: black;            
+  font-size: 24px;         
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+
+@media (max-width: 768px) {
+  /* Stack major sections */
+  .navbar,
+  .hero,
+  .booking-section,
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+  }
+
+  /* Booking section adjusts */
+  .booking-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .booking-left,
+  .booking-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Add space between left & right */
+  .booking-right {
+    margin-top: 20px;
+  }
+
+  /* Hero text smaller */
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  /* Overview boxes stack */
+  .overview-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 25px;
+  }
+}
+
+/* Phones (small screens) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  /* Booking section tighter on phones */
+  .booking-section {
+    padding: 10px;
+    height:1000px;
+  }
+
+  .booking-left,
+  .booking-right {
+    padding: 10px;
+    margin: 0;
+  }
+
+  /* Cart smaller */
+  .cart {
+    max-height: 200px;
+    width: 100%;
+  }
+
+  /* Booking form full width */
+  .booking-form input,
+  .booking-form button {
+    width: 100%;
+  }
+
+  /* Newsletter & footer adjustments */
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .footer-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* Navbar Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+
+  .username {
+    margin-top: 10px;
+  }
+}
