@@ -89,7 +89,7 @@ function sendBooking() {
   emailjs.send("service_rfost09", "template_4c8apue", params)
     .then(() => {
       thankYouMsg.style.color = "green";
-      thankYouMsg.textContent = "Booking sent successfully! We'll get back to you soon.";
+      thankYouMsg.textContent = "Thank you For Booking the Service We will get back to you soon!";
 
       document.getElementById("fullName").value = "";
       document.getElementById("email").value = "";
@@ -112,3 +112,4 @@ function sendBooking() {
       bookBtn.innerText = "Book Now";
     });
 }
+
